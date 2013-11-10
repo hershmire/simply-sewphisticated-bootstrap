@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "main": ["./dist/styles/ss-bootstrap.css"],
   "ignore": [
-    "**/.*"
+    "**/.*",
+    "Gruntfile.coffee",
+    "package.json",
+    "tasks"
   ],
   "dependencies": {
     "sass-bootstrap": "~3.0.0"
@@ -11,7 +14,7 @@
   "devDependencies": {
     "requirejs": "~2.1.8",
     "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
+    "jquery": "~2.0.3"
   },
   "private": true
 }
