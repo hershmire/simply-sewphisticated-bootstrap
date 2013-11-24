@@ -9,11 +9,11 @@
     "tasks"
   ],
   "dependencies": {
-    "sass-bootstrap": "~3.0.0"
   },
   "devDependencies": {
     "requirejs": "~2.1.8",
-    "modernizr": "~2.6.2",
+    "modernizr": "~2.7",
+    "sass-bootstrap": "~3.0.0",
     "jquery": "~2.0.3"
   },
   "private": true
