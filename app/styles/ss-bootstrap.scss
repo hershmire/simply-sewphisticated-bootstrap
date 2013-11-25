@@ -1,51 +1,49 @@
-$sass_bootstrap_path: "../bower_components/sass-bootstrap/lib";
-
 // Core variables and mixins
-@import "#{$sass_bootstrap_path}/variables";
-@import "#{$sass_bootstrap_path}/mixins";
+@import "../bower_components/sass-bootstrap/lib/variables";
+@import "../bower_components/sass-bootstrap/lib/mixins";
 
 // Reset
-@import "#{$sass_bootstrap_path}/normalize";
-@import "#{$sass_bootstrap_path}/print";
+@import "../bower_components/sass-bootstrap/lib/normalize";
+@import "../bower_components/sass-bootstrap/lib/print";
 
 // Core CSS
-@import "#{$sass_bootstrap_path}/scaffolding";
-@import "#{$sass_bootstrap_path}/type";
-@import "#{$sass_bootstrap_path}/code";
-@import "#{$sass_bootstrap_path}/grid";
-@import "#{$sass_bootstrap_path}/tables";
-@import "#{$sass_bootstrap_path}/forms";
-@import "#{$sass_bootstrap_path}/buttons";
+@import "../bower_components/sass-bootstrap/lib/scaffolding";
+@import "../bower_components/sass-bootstrap/lib/type";
+@import "../bower_components/sass-bootstrap/lib/code";
+@import "../bower_components/sass-bootstrap/lib/grid";
+@import "../bower_components/sass-bootstrap/lib/tables";
+@import "../bower_components/sass-bootstrap/lib/forms";
+@import "../bower_components/sass-bootstrap/lib/buttons";
 
 // Components
-@import "#{$sass_bootstrap_path}/component-animations";
-@import "#{$sass_bootstrap_path}/glyphicons";
-@import "#{$sass_bootstrap_path}/dropdowns";
-@import "#{$sass_bootstrap_path}/button-groups";
-@import "#{$sass_bootstrap_path}/input-groups";
-@import "#{$sass_bootstrap_path}/navs";
-@import "#{$sass_bootstrap_path}/navbar";
-@import "#{$sass_bootstrap_path}/breadcrumbs";
-@import "#{$sass_bootstrap_path}/pagination";
-@import "#{$sass_bootstrap_path}/pager";
-@import "#{$sass_bootstrap_path}/labels";
-@import "#{$sass_bootstrap_path}/badges";
-@import "#{$sass_bootstrap_path}/jumbotron";
-@import "#{$sass_bootstrap_path}/thumbnails";
-@import "#{$sass_bootstrap_path}/alerts";
-@import "#{$sass_bootstrap_path}/progress-bars";
-@import "#{$sass_bootstrap_path}/media";
-@import "#{$sass_bootstrap_path}/list-group";
-@import "#{$sass_bootstrap_path}/panels";
-@import "#{$sass_bootstrap_path}/wells";
-@import "#{$sass_bootstrap_path}/close";
+@import "../bower_components/sass-bootstrap/lib/component-animations";
+@import "../bower_components/sass-bootstrap/lib/glyphicons";
+@import "../bower_components/sass-bootstrap/lib/dropdowns";
+@import "../bower_components/sass-bootstrap/lib/button-groups";
+@import "../bower_components/sass-bootstrap/lib/input-groups";
+@import "../bower_components/sass-bootstrap/lib/navs";
+@import "../bower_components/sass-bootstrap/lib/navbar";
+@import "../bower_components/sass-bootstrap/lib/breadcrumbs";
+@import "../bower_components/sass-bootstrap/lib/pagination";
+@import "../bower_components/sass-bootstrap/lib/pager";
+@import "../bower_components/sass-bootstrap/lib/labels";
+@import "../bower_components/sass-bootstrap/lib/badges";
+@import "../bower_components/sass-bootstrap/lib/jumbotron";
+@import "../bower_components/sass-bootstrap/lib/thumbnails";
+@import "../bower_components/sass-bootstrap/lib/alerts";
+@import "../bower_components/sass-bootstrap/lib/progress-bars";
+@import "../bower_components/sass-bootstrap/lib/media";
+@import "../bower_components/sass-bootstrap/lib/list-group";
+@import "../bower_components/sass-bootstrap/lib/panels";
+@import "../bower_components/sass-bootstrap/lib/wells";
+@import "../bower_components/sass-bootstrap/lib/close";
 
 // Components w/ JavaScript
-@import "#{$sass_bootstrap_path}/modals";
-@import "#{$sass_bootstrap_path}/tooltip";
-@import "#{$sass_bootstrap_path}/popovers";
-@import "#{$sass_bootstrap_path}/carousel";
+@import "../bower_components/sass-bootstrap/lib/modals";
+@import "../bower_components/sass-bootstrap/lib/tooltip";
+@import "../bower_components/sass-bootstrap/lib/popovers";
+@import "../bower_components/sass-bootstrap/lib/carousel";
 
 // Utility classes
-@import "#{$sass_bootstrap_path}/utilities";
-@import "#{$sass_bootstrap_path}/responsive-utilities";
+@import "../bower_components/sass-bootstrap/lib/utilities";
+@import "../bower_components/sass-bootstrap/lib/responsive-utilities";
