@@ -1,5 +1,7 @@
 node_modules
-dist/bower_components
+dist/bower_components/jquery
+dist/bower_components/modernizr
+dist/bower_components/requirejs
 .tmp
 .sass-cache
 app/bower_components
