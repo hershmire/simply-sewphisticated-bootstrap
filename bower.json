@@ -2,8 +2,7 @@
   "name": "simply-sewphisticated-bootstrap",
   "version": "0.0.0",
   "main": [
-    "./dist/styles/ss-bootstrap.css",
-    "./app/bower_components/sass-bootstrap/lib"
+    "./dist/styles/ss-bootstrap.css"
   ],
   "ignore": [
     "**/.*",
