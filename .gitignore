@@ -2,7 +2,8 @@ node_modules
 .tmp
 .sass-cache
 dist/bower_components
-app/bower_components/jquery
-app/bower_components/modernizr
-app/bower_components/requirejs
+app/bower_components
 .DS_Store
+
+# Don't ignore the sass-bootstrap libs folder
+!app/bower_components/sass-bootstrap/libs
