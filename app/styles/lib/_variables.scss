@@ -6,15 +6,47 @@
 // `!default` flag.
 //
 
+// Global values
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+
+// $gray-darker:            lighten(#000, 13.5%) !default; // #222
+// $gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 40%) !default;   // #666
+// $gray-light:             lighten(#000, 60%) !default;   // #999
+// $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+// Brand colors
+// -------------------------
+
+// $brand-primary:         #428bca !default;
+// $brand-success:         #5cb85c !default;
+// $brand-warning:         #f0ad4e !default;
+// $brand-danger:          #d9534f !default;
+// $brand-info:            #5bc0de !default;
+
+// Scaffolding
+// -------------------------
+
+// $body-bg:               #fff !default;
+// $text-color:            $gray-dark !default;
+
+// Links
+// -------------------------
+
+// $link-color:            $brand-primary !default;
+// $link-hover-color:      darken($link-color, 15%) !default;
 
 // Typography
 // -------------------------
 
 $font-family-sans-serif:  "Oswald" !default;
 $font-family-serif:       "Droid Serif" !default;
-$font-family-base:        $font-family-sans-serif !default;
+$font-family-base:        $font-family-serif !default;
 
-// $font-size-base:          14px !default;
+$font-size-base:          18px !default;
 // $font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
 // $font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
 
@@ -28,11 +60,12 @@ $font-family-base:        $font-family-sans-serif !default;
 // $line-height-base:        1.428571429 !default; // 20/14
 // $line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
 
-// $headings-font-family:    $font-family-base !default;
-// $headings-font-weight:    500 !default;
+$headings-font-family:    $font-family-sans-serif !default;
+$headings-font-weight:    inherit !default;
 // $headings-line-height:    1.1 !default;
-// $headings-color:          inherit !default;
+$headings-color:          $gray !default;
 
+$post-meta-font-size:     ceil($font-size-base * 0.77); // 14px
 
 // Import the core sass-bootstrap variables file
 @import "../../bower_components/sass-bootstrap/lib/variables";
