@@ -2,8 +2,23 @@ node_modules
 .tmp
 .sass-cache
 dist/bower_components
-app/bower_components
 .DS_Store
 
-# Don't ignore the sass-bootstrap libs folder
-!app/bower_components/sass-bootstrap/libs
+#
+# Ignore / Exclusion trick for sass-bootstrap raw source files
+#
+
+# ignore all bower_components
+app/bower_components/*
+# exclude the sass-bootstrap folder
+!app/bower_components/sass-bootstrap
+# ignore all files inside the sass-bootstrap folder
+app/bower_components/sass-bootstrap/*
+# exclude the lib folder
+!app/bower_components/sass-bootstrap/lib
+# exclude the fonts folder
+!app/bower_components/sass-bootstrap/fonts
+# exclude the js folder
+!app/bower_components/sass-bootstrap/js
+# ignore the js/tests
+app/bower_components/sass-bootstrap/js/tests
