@@ -1,0 +1,48 @@
+//
+// Sprites
+// --------------------------------------------------
+
+@import "compass/utilities/sprites/base";
+
+// Compass sprites
+$global-sprite-dimensions: true;
+
+$global-layout: smart;
+@import "global/**/*.png";
+@include all-global-sprites;
+
+$global-retina-layout: smart;
+@import "global-retina/**/*.png";
+@include all-retina-sprites($global-sprites, $global-retina-sprites);
+
+[class*="global-"],
+[className*="global-"] /* for IE */ {
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// Nested hover support
+$sprite-selectors: hover, target, active !default;
+
+@each $i in sprite-names($global-sprites) {
+  @each $selector in $sprite-selectors {
+    // TODO: sprite_has_selector to be replaced with future file_exists function to support custom _selected
+    // https://github.com/chriseppstein/compass/issues/1093
+    // e.g. <a href="#"><span class="global-back-arrow"></span></a>
+    @if sprite_has_selector($global-sprites, $i, $selector) {
+      .global-#{$i} {
+        a[href]:#{$selector} &,
+        button:#{$selector} & {
+          @include sprite-background-position($global-sprites, "#{$i}_#{$selector}", 0, 0);
+        }
+      }
+    }
+  }
+
+  @if sprite_has_selector($global-sprites, $i, 'target') {
+    .global-#{$i}.selected {
+      @include sprite-background-position($global-sprites, "#{$i}_target", 0, 0);
+    }
+  }
+}

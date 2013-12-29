@@ -1,0 +1,33 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// Retina support for sprite images
+@mixin all-retina-sprites($map, $retinaMap) {
+  @include forRetina {
+    @debug "Hello?" sprite-map-name($map);
+
+    $base-class: sprite-map-name($map);
+    $sprite-names: sprite-names($retinaMap);
+    $retina-width: image-width( sprite-path($retinaMap) ) / 2;
+
+    // Change the background image source for all global sprites
+    .#{$base-class}-all-retina-sprites {
+      background-image: sprite-url($retinaMap);
+    }
+
+    // add the custom background-size for retina sprites
+    @each $sprite in $sprite-names {
+      .#{$base-class}-#{$sprite} {
+        @extend .#{$base-class}-all-retina-sprites;
+        background-size: $retina-width auto;
+      }
+    }
+  }
+}
+
+@mixin forRetina() {
+  @media (-webkit-min-device-pixel-ratio: 2), (-min-moz-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2 / 1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
