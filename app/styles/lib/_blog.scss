@@ -17,6 +17,10 @@ article.post {
       font-size: $blog-font-size-header;
       text-transform: uppercase;
       margin-top: $line-height-computed / 2; // ~10px
+
+      @media (min-width: $screen-sm-min) {
+        font-size: ceil($blog-font-size-header * 1.6);
+      }
     }
   }
 }

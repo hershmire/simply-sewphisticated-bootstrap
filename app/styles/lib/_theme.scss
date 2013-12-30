@@ -13,3 +13,12 @@
   text-transform: uppercase;
   border-width: 2px;
 }
+
+a {
+  @include transition(color 0.2s ease-in);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
