@@ -1,0 +1,27 @@
+//
+// Pagination
+// --------------------------------------------------
+
+.pagination {
+  text-align: center;
+  position: relative;
+
+  .page-number {
+    display: inline-block;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: $line-height-computed * .3;
+    }
+  }
+
+  .older-posts {
+    position: inherit;
+    margin-left: $line-height-computed / 2;
+
+    @media (min-width: $screen-sm-min) {
+      position: absolute;
+      right: 0;
+      margin-left: 0;
+    }
+  }
+}

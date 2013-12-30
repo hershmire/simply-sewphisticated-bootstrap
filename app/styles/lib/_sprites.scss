@@ -8,7 +8,7 @@
 $global-sprite-dimensions: true;
 
 $global-layout: smart;
-@import "global/**/*.png";
+@import "global/**/**.png";
 @include all-global-sprites;
 
 $global-retina-layout: smart;

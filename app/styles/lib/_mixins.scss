@@ -5,8 +5,6 @@
 // Retina support for sprite images
 @mixin all-retina-sprites($map, $retinaMap) {
   @include forRetina {
-    @debug "Hello?" sprite-map-name($map);
-
     $base-class: sprite-map-name($map);
     $sprite-names: sprite-names($retinaMap);
     $retina-width: image-width( sprite-path($retinaMap) ) / 2;

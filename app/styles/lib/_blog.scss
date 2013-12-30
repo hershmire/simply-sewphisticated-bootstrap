@@ -5,16 +5,18 @@
 article.post {
   padding-bottom: 45px;
   margin-bottom: 30px;
-  border-bottom: 2px dotted $gray-lighter;
+  border-bottom: 3px dotted $gray-lighter;
 
   .post-header {
     .post-meta {
-      font-family: $font-family-sans-serif;
+      font-family: $font-family-sans-serif-alt;
       font-size: $post-meta-font-size;
     }
 
-    h2 {
+    .post-title {
+      font-size: $blog-font-size-header;
       text-transform: uppercase;
+      margin-top: $line-height-computed / 2; // ~10px
     }
   }
 }

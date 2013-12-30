@@ -10,7 +10,7 @@ module.exports =
     cssDir: '<%= options.tempDir %>/styles'
     # generatedImagesDir: '<%= options.tempDir %>/images/generated'
     generatedImagesDir: '<%= options.basePath %>/images'
-    imagesDir: '<%= options.basePath %>/images'
+    imagesDir: '<%= options.basePath %>/images/'
     javascriptsDir: '<%= options.basePath %>/scripts'
     fontsDir: '<%= options.basePath %>/styles/fonts'
     importPath: '<%= options.basePath %>/bower_components'
@@ -21,10 +21,11 @@ module.exports =
     relativeAssets: false
     assetCacheBuster: false
 
-  dist:
-    options:
-      generatedImagesDir: '<%= options.buildDir %>'
+  # dist:
+  #   options:
+  #     generatedImagesDir: '<%= options.buildDir %>'
 
   server:
     options:
       debugInfo: true
+      force: true

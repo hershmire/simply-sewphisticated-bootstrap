@@ -2,5 +2,14 @@
 // From _jumbotron.scss
 //
 .jumbotron {
-    background: #f4f2ee url('./images/grid-pattern.png') repeat;
+  background: #f4f2ee url('../../images/grid-pattern.png') repeat;
+}
+
+// Buttons
+//
+.btn {
+  font-family: $font-family-sans-serif-alt;
+  font-size: ceil($font-size-base * .6); // ~11px
+  text-transform: uppercase;
+  border-width: 2px;
 }
