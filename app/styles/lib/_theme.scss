@@ -3,6 +3,7 @@
 //
 .jumbotron {
   background: #f4f2ee url('../../images/grid-pattern.png') repeat;
+  background: #f4f2ee url(image-url('grid-pattern.png', true)) repeat;
 }
 
 // Buttons
