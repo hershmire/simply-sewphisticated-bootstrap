@@ -19,14 +19,31 @@
     }
   }
 
-  .older-posts {
+  .older-posts,
+  .newer-posts {
     position: inherit;
-    margin-left: $line-height-computed / 2;
+    display: block;
 
     @media (min-width: $screen-sm-min) {
       position: absolute;
+    }
+  }
+
+  .older-posts {
+    margin-left: $line-height-computed / 2;
+
+    @media (min-width: $screen-sm-min) {
       right: 0;
       margin-left: 0;
+    }
+  }
+
+  .newer-posts {
+    margin-right: $line-height-computed / 2;
+
+    @media (min-width: $screen-sm-min) {
+      left: 0;
+      margin-right: 0;
     }
   }
 }
