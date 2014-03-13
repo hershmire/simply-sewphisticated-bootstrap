@@ -6,6 +6,8 @@ article.post {
   padding-bottom: 45px;
   margin-bottom: 30px;
   border-bottom: 3px dotted $gray-lighter;
+  word-break: break-word;
+  hyphens: auto;
 
   .post-header {
     .post-meta {
