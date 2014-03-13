@@ -103,5 +103,33 @@ $btn-default-hover-color:        darken($btn-default-color, 15%) !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #f4f2ee !default;
 
+
+// Screen min sizes
+$screen-xs-min:              480px !default;
+$screen-sm-min:              768px !default;
+$screen-md-min:              992px !default;
+$screen-lg-min:              1200px !default;
+
+// Screen max sizes – so media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+$screen: "only screen";
+$landscape: "#{$screen} and (orientation: landscape)";
+$portrait: "#{$screen} and (orientation: portrait)";
+
+$xsmall-up: $screen;
+$xsmall-only: "#{$screen} and (max-width: #{$screen-xs-max})";
+
+$small-up: "#{$screen} and (min-width:#{$screen-sm-min})";
+$small-only: "#{$screen} and (min-width:#{$screen-sm-min}) and (max-width:#{$screen-sm-max})";
+
+$medium-up: "#{$screen} and (min-width:#{$screen-md-min})";
+$medium-only: "#{$screen} and (min-width:#{$screen-md-min}) and (max-width:#{$screen-md-max})";
+
+$large-up: "#{$screen} and (min-width:#{$screen-lg-min})";
+$large-only: "#{$screen} and (min-width:#{$screen-lg-min}) and (max-width:999999999)";
+
 // Import the core sass-bootstrap variables file
 @import "../../bower_components/sass-bootstrap/lib/variables";
