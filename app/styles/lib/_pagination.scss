@@ -7,44 +7,41 @@
   position: relative;
 
   .page-number {
-    display: inline-block;
     font-family: $font-family-sans-serif-alt;
     font-size: ceil($font-size-base * .6); // ~11px
     text-transform: uppercase;
     letter-spacing: 1.3px;
     color: #b0b0b0;
-
-    @media (min-width: $screen-sm-min) {
-      margin-top: $line-height-computed * .3;
-    }
+    display: block;
+    margin-bottom: $line-height-computed * .3;
   }
 
   .older-posts,
   .newer-posts {
     position: inherit;
-    display: block;
+    color: $btn-default-color;
+
+    &:hover {
+      color: $btn-default-hover-color;
+    }
 
     @media (min-width: $screen-sm-min) {
       position: absolute;
     }
   }
 
-  .older-posts {
-    margin-left: $line-height-computed / 2;
-
-    @media (min-width: $screen-sm-min) {
-      right: 0;
-      top: 0;
-      margin-left: 0;
+  @media (min-width: $screen-sm-min) {
+    .older-posts,
+    .newer-posts {
+      top: -50%;
     }
-  }
 
-  .newer-posts {
-    margin-right: $line-height-computed / 2;
+    .older-posts {
+      right: 0;
+    }
 
-    @media (min-width: $screen-sm-min) {
+    .newer-posts {
       left: 0;
-      margin-right: 0;
     }
   }
 }

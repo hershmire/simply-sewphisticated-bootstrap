@@ -99,6 +99,7 @@ $border-radius-small:            0px !default;
 // -------------------------
 
 $btn-default-color:              #b0b0b0 !default;
+$btn-default-hover-color:        darken($btn-default-color, 15%) !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #f4f2ee !default;
 
